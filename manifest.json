@@ -1,0 +1,71 @@
+{
+ "name": "companion-voices",
+ "version": 1,
+ "created": "2026-10-12",
+ "engine": "sherpa-onnx >= 1.13 (OfflineTts)",
+ "kokoro": {
+  "model": "kokoro/model.int8.onnx",
+  "voices": "kokoro/voices.bin",
+  "tokens": "kokoro/tokens.txt",
+  "lexicon": "kokoro/lexicon-us-en.txt",
+  "data_dir": "espeak-ng-data",
+  "source": "k2-fsa/sherpa-onnx tts-models kokoro-int8-multi-lang-v1_0",
+  "license": "Apache-2.0",
+  "sample_rate": 24000,
+  "speakers": 54
+ },
+ "piper_hi_female": {
+  "model": "piper-hi-f/model.onnx",
+  "tokens": "piper-hi-f/tokens.txt",
+  "source": "vits-piper-hi_IN-priyamvada-medium-int8",
+  "license": "CC BY-NC-SA 4.0"
+ },
+ "piper_hi_male": {
+  "model": "piper-hi-m/model.onnx",
+  "tokens": "piper-hi-m/tokens.txt",
+  "source": "vits-piper-hi_IN-pratham-medium-int8",
+  "license": "CC BY-NC-SA 4.0"
+ },
+ "espeak_ng_data": "trimmed to en_dict + hi_dict (GPL-3.0, from espeak-ng)",
+ "files": {
+  "LICENSES/KOKORO-LICENSE-Apache-2.0.txt": {
+   "size": 11358
+  },
+  "LICENSES/PIPER-hi_IN-pratham-MODEL_CARD.txt": {
+   "size": 304
+  },
+  "LICENSES/PIPER-hi_IN-priyamvada-MODEL_CARD.txt": {
+   "size": 307
+  },
+  "kokoro/lexicon-us-en.txt": {
+   "size": 5956885
+  },
+  "kokoro/model.int8.onnx": {
+   "size": 114203756
+  },
+  "kokoro/tokens.txt": {
+   "size": 687
+  },
+  "kokoro/voices.bin": {
+   "size": 28200960
+  },
+  "piper-hi-f/model.onnx": {
+   "size": 18575703
+  },
+  "piper-hi-f/model.onnx.json": {
+   "size": 4973
+  },
+  "piper-hi-f/tokens.txt": {
+   "size": 940
+  },
+  "piper-hi-m/model.onnx": {
+   "size": 18575696
+  },
+  "piper-hi-m/model.onnx.json": {
+   "size": 4970
+  },
+  "piper-hi-m/tokens.txt": {
+   "size": 940
+  }
+ }
+}
